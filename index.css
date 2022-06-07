@@ -1,0 +1,169 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
+
+/* Typography */
+
+button,
+input {
+  font-family: inherit;
+}
+
+h3 {
+  color: #dfdddd;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: -2px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-link {
+  font-weight: bold;
+}
+
+.watchlist-cta {
+  display: flex;
+  align-items: center;
+}
+
+.watchlist-cta-text {
+  color: black;
+}
+
+/* Styling */
+
+main {
+  margin: 0 2em;
+}
+
+header {
+  padding: 4em 0;
+  background-image: url("https://images.unsplash.com/photo-1628432136678-43ff9be34064");
+  background-color: #383838;
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: 0% 25%;
+}
+
+.header {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #dfdddd;
+  border-radius: 7px;
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  top: -30px;
+}
+
+.search-bar-input {
+  border: none;
+  padding: 0.5em;
+  margin-right: auto;
+  width: 60%;
+}
+
+.search-bar-button {
+  border: none;
+  border-left: 2px solid #dfdddd;
+  background-color: #f9fafb;
+  padding: 1em 3em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  color: #374151;
+}
+
+.search-bar-image {
+  margin: 1em;
+}
+
+.movie-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.icon {
+  width: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.movie-container {
+  max-width: 600px;
+  min-height: 350px;
+  border-bottom: 1px solid grey;
+}
+
+.movie-poster {
+  width: 100%;
+}
+
+.movie-container-poster {
+  width: 40%;
+}
+.movie-container-info {
+  width: 80%;
+}
+
+.watchlist-btn {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.watchlist-btn:active {
+  transform: scale(0.9);
+}
+
+@media (max-width: 600px) {
+  .movie-container {
+    flex-direction: column;
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+  }
+  .search-bar-button {
+    padding: 1em 2em;
+  }
+  .header {
+    flex-direction: column;
+    margin: 0 2em;
+  }
+}
